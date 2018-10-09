@@ -1,5 +1,8 @@
 # It’s Hip to Be Square: A Re-introduction to Web Layout 
 
+![patrick-bateman](assets/hueylewis.jpg)
+      
+
 ## But Why
 * Layout is not cool - there are a million other things that we could talk about. 
 * Maybe for this reason that it's misunderstood? Fundamentals often get overlooked in pursuit of the shiny thing.
@@ -18,11 +21,18 @@
 These are the primary concepts governing layout in the [visual formatting model](https://www.w3.org/TR/CSS21/visuren.html#visual-model-intro). 
 
 ## The Box Model (10 mins)
+
+![brad-pitt](assets/box.jpg)
+
+*Brad Pitt would also like to know what’s in the box*
+
 In order to understand page layout, we first need to understand how individual elements are formed and occupy space.
 
 > The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. 
 
 Source: [W3](https://www.w3.org/TR/CSS2/box.html)
+
+![box-model](assets/boxmodel.png)
 
 ### Content, Padding, Border, and Margin
 * **Content area** - contains the “real” element content (text, image, etc). Defined with width and height properties (including `min-width`, `min-height`, etc). 
@@ -114,7 +124,7 @@ Source: [W3](https://www.w3.org/TR/css-display-3/#the-display-properties)
 * **Best for**: simple or complex layouts. 
 * **Not as good for**: Older browsers. IE doesn’t support the current implementation of Grid (although it does support a very early version). 
 
-## Flow and Positioning
+## Flow and Positioning (10 mins)
 
 * By default, elements are laid out according to normal flow, with boxes on top of each other in the order that they appear in the source code.
 * Certain display properties, such as `flex` and `grid`, can modify the order in which their descendant elements appear. 
