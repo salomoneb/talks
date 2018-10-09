@@ -136,7 +136,7 @@ To see all boxes on a page:
 * Originally created for floating images inside text blocks. 
 * Evolved to become used for multi-column web layout. Considered a legacy technique now. 
 * Using the float property specifies whether an element should be placed along the left or right side of its container, allowing text elements to wrap around it. 
-* Accepts none, left, or right values. 
+* Accepts `none`, `left`, or `right` values. 
 * Can be “cleared” with the `clear` property (so the content below the float follows the normal flow again). 
 * Still useful if you need to put something in a corner!
 * **Good for:** putting things in corners, floating images or media inside of text. 
