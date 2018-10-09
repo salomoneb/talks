@@ -80,6 +80,7 @@ Source: [W3](https://www.w3.org/TR/css-display-3/#the-display-properties)
 
 #### :bulb: [DEMO 3](https://codepen.io/soluhmin/pen/MPbwQW)
 
+
 ### Block
 * Occupies the entire width of the parent container. 
 * Examples: `<div>`, `<p>`, `<ul>`, `<form>`. 
