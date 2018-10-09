@@ -131,7 +131,7 @@ To see all boxes on a page:
 * Certain display properties, such as `flex` and `grid`, can modify the order in which their descendant elements appear. 
 * There are a few other ways to change how elements are laid out on the page. We’ll review two of them: floats and position. (There’s also multi-column layout, which we won’t cover.)
 
-Floats
+### Floats
 * Removes the element from the normal flow and shifts it until it reaches the edge of its containing box or another floated element. 
 * Originally created for floating images inside text blocks. 
 * Evolved to become used for multi-column web layout. Considered a legacy technique now. 
