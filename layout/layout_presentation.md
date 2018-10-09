@@ -2,7 +2,7 @@
 
 ## But Why
 * Layout is not cool - there are a million other things that we could talk about. 
-* Fundamentals often get dismissed in pursuit of the shiny thing (knowing the fundamentals can help you understand the shiny thing).
+* Maybe for this reason that it's misunderstood? Fundamentals often get overlooked in pursuit of the shiny thing.
 * Programmers are often quick to dismiss layout - and CSS in general - as secondary or irrelevant to their work. 
 * As web developers, we make things **for the web**. If you can know what things like “dependency injection” and “memoization” mean, but are overwhelmed at the prospect of styling a login page, then you are missing key skills. 
 
@@ -25,7 +25,7 @@ In order to understand page layout, we first need to understand how individual e
 Source: [W3](https://www.w3.org/TR/CSS2/box.html)
 
 ### Content, Padding, Border, and Margin
-* **Content area** - contains the “real” element content (text, image, etc). Defined with width and height properties (including min-width, min-height, etc). 
+* **Content area** - contains the “real” element content (text, image, etc). Defined with width and height properties (including `min-width`, `min-height`, etc). 
 * **Padding area** - extends the content area. Can be set with the padding property. Pushes against the content. 
 * **Border** - the border around the padding and the content. 0 by default. 
 * **Margin** - the space surrounding a CSS box. Pushes against other CSS boxes in the layout.
@@ -48,7 +48,7 @@ Source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to
 
 #### :bulb: [DEMO 2](https://codepen.io/soluhmin/pen/wYzQgB)
 
-### :warning: Using border to troubleshoot layout
+### :warning: Using border to troubleshoot layout :warning:
 * We often need to calculate the sizing of things on web pages. Sometimes we want to know how two boxes are laid out next to each other.
 * Generally, it's not a good idea to use border for this.
 * Border occupies space, which affects layout. Use `outline` instead (ex. `outline: 1px solid red;`).
@@ -60,3 +60,62 @@ To see all boxes on a page:
     outline: 1px solid red;
 }
 ```
+
+## The Display Property
+> The display property defines an element’s display type, which consists of the two basic qualities of how an element generates boxes:  
+>
+> The **inner display type**, which defines (if it is a non-replaced element) the kind of formatting context it generates, dictating how its descendant boxes are laid out. (The inner display of a replaced element is outside the scope of CSS.)  
+>
+> The **outer display type**, which dictates how the principal box itself participates in flow layout.
+
+Source: [W3](https://www.w3.org/TR/css-display-3/#the-display-properties)
+
+* Examples of `<display-outside>` values include **block** and **inline**. Examples of `<display-inside>` values include **flex**, **grid**, and **table**. 
+* All HTML elements are categorized as block or inline elements.  
+* We can use the `display` property to override the default display type of an element. We can make block-level elements inline, and inline-level elements block-level. 
+* 41 potential display values. 
+* We will not be covering most of these.
+* Important ones: `block`, `inline`, `inline-block`, `flex`, `grid`, `table`, `none`. 
+* `Ruby`?
+
+#### :bulb: [DEMO 3](https://codepen.io/soluhmin/pen/MPbwQW)
+
+### Block
+* Occupies the entire width of the parent container. 
+* Examples: `<div>`, `<p>`, `<ul>`, `<form>`. 
+* Block level elements begin on a new line.
+* **Best for:** basic, stacked layouts. 
+* **Not as good for**: positioning and multi-column formatting.
+### Inline
+* Inline-level elements occupy the space bounded by the tags defining the element. 
+* Inline examples: <textarea>, <iframe>, <span>, <button>
+* Inline elements ignore top and bottom margins. 
+* They do respect padding, but this padding does not affect the surrounding layout. 
+* Best for: styling elements inside of block-level elements. 
+Not as good for: laying out elements in the normal page flow.
+### Inline-block
+### Flex
+### Grid
+
+Inline-Block
+Inline-block elements contain the best of both worlds: their insides are formatted as a block box, but the outer element is formatted as an inline element. This means that we can apply a width and height to them. We also don’t have to worry about line-breaks like we would with block-level elements. 
+What are some uses for inline-block elements?
+Best for: positioning elements inside of block-level elements so that margin, padding, and border spacing are all respected; for creating basic and cross-browser compatible multi-column layouts. 
+Not as good for: complex multi-column layouts, vertical alignment (especially centering). 
+
+Flexbox
+
+Designed as a one-dimensional layout model. 
+Easier to align items than with previous methods. Great for centering.
+Use justify content to align items along the main axis and align-items to align content along a secondary axis. 
+Additional support for spacing between items. 
+Still requires us to create divs around things. 
+Best for: aligning items in more complex ways along a single plane. 
+Not as good for: creating grids. Flexbox still requires each group of elements to be nested inside of a div, resulting in nested boxes. The spec implementation is also inconsistent among some versions of IE and Safari. 
+
+Grid
+The answer to our layout prayers. 
+Allows us to align items in multiple dimensions. 
+Can define a grid template of rows and columns. 
+Best for: most layouts. 
+Not as good for: Internet Explorer. IE doesn’t support the current implementation of Grid (though does support a very early version). 
