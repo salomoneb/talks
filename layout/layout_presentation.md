@@ -8,7 +8,7 @@
 * Layout is not cool - there are a million other things that we could talk about.
 * Maybe for this reason that it's misunderstood? Fundamentals often get overlooked in pursuit of the shiny thing.
 * Programmers are often quick to dismiss layout, and CSS in general, as secondary or irrelevant to their work.
-* As web developers, we make things **for the web**. If the prospect of styling a login page is overwhelming, then you are missing key skills.
+* As web developers, we make things **for the web**. It's essential that we know how to format content in a presentable way.
 
 ## Goals
 * Familiarize ourselves with the fundamentals of web layout.
