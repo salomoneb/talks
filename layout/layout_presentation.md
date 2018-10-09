@@ -1,6 +1,7 @@
 # It’s Hip to Be Square: A Re-introduction to Web Layout 
 
-![patrick-bateman](assets/hueylewis.jpg)
+
+<img src="assets/hueylewis.jpg" width="700">
       
 
 ## But Why
@@ -22,7 +23,7 @@ These are the primary concepts governing layout in the [visual formatting model]
 
 ## The Box Model (10 mins)
 
-![brad-pitt](assets/box.jpg)
+<img src="assets/box.jpg" width="500">
 
 *Brad Pitt would also like to know what’s in the box*
 
@@ -30,9 +31,9 @@ In order to understand page layout, we first need to understand how individual e
 
 > The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. 
 
-Source: [W3](https://www.w3.org/TR/CSS2/box.html)
+[Source: W3](https://www.w3.org/TR/CSS2/box.html)
 
-![box-model](assets/boxmodel.png)
+<img src="assets/boxmodel.png" width="500">
 
 ### Content, Padding, Border, and Margin
 * **Content area** - contains the “real” element content (text, image, etc). Defined with width and height properties (including `min-width`, `min-height`, etc). 
@@ -46,7 +47,7 @@ Source: [W3](https://www.w3.org/TR/CSS2/box.html)
 
 >Margins have a specific behavior called margin collapsing. When two boxes touch against one another, the distance between them is the value of the largest of the two touching margins, and not their sum.
 
-Source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
+[Source: MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
 #### :bulb: [DEMO 1](https://codepen.io/soluhmin/pen/ReGqdw)
 
@@ -78,7 +79,7 @@ To see all boxes on a page:
 >
 > The **outer display type**, which dictates how the principal box itself participates in flow layout.
 
-Source: [W3](https://www.w3.org/TR/css-display-3/#the-display-properties)
+[Source: W3](https://www.w3.org/TR/css-display-3/#the-display-properties)
 
 * Examples of `<display-outside>` values include **block** and **inline**. Examples of `<display-inside>` values include **flex**, **grid**, and **table**. 
 * All HTML elements are categorized as block or inline elements.  
