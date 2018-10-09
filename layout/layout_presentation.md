@@ -38,6 +38,25 @@ Source: [W3](https://www.w3.org/TR/CSS2/box.html)
 
 Source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
-:bulb: [DEMO](https://codepen.io/soluhmin/pen/ReGqdw)
+#### :bulb: [DEMO 1](https://codepen.io/soluhmin/pen/ReGqdw)
 
+### Box-sizing
+* The `box-sizing` CSS property defines how the user agent should calculate the total width and height of an element. 
+* Accepts two values: `content-box` (default) and `border-box`.
+* By default, the width and height you assign to an element is **only applied to its content box.** This means that when you set a height and width, you have to adjust the values to account for border and padding (margin is excluded). 
+* By setting `box-sizing: border-box;`, the user agent factors in the padding and border values when calculating the total element size. 
 
+#### :bulb: [DEMO 2](https://codepen.io/soluhmin/pen/wYzQgB)
+
+### :warning: Using border to troubleshoot layout
+* We often need to calculate the sizing of things on web pages. Sometimes we want to know how two boxes are laid out next to each other.
+* Generally, it's not a good idea to use border for this.
+* Border occupies space, which affects layout. Use `outline` instead (ex. `outline: 1px solid red;`).
+* Outline doesn’t take up space and is not part of the box model. It also doesn’t have to be rectangular. 
+
+To see all boxes on a page:
+```
+* {
+    outline: 1px solid red;
+}
+```
