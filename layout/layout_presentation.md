@@ -179,6 +179,5 @@ Positioned elements are best for individual placement, not constructing entire p
 * We understand what the `display` property is used for and know some of the most common display properties.
 * We know what normal flow is and how floats and positioned elements interact with it.
 
-<img src="assets/homer.png" width="500">
-
 ## Questions?
+<img src="assets/homer.png" width="500">
