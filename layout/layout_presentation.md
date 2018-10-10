@@ -178,3 +178,7 @@ Positioned elements are best for individual placement, not constructing entire p
 * We understand how height and width are applied to elements and how these are affected by the `box-sizing` property.
 * We understand what the `display` property is used for and know some of the most common display properties.
 * We know what normal flow is and how floats and positioned elements interact with it.
+
+<img src="assets/homer.png" width="500">
+
+## Questions?
